@@ -1,0 +1,27 @@
+.home-section {
+    background-image: url("../../imgs/header background.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 3rem 0;
+    overflow: hidden;
+    z-index: 5;
+    margin-bottom: 10rem;
+}
+
+.values-section {
+    margin: 5rem 0;
+    padding: 5rem 5rem;
+    background-color: $color-white;
+}
+
+.features-section {
+    padding: 5rem 5rem;
+    background-image: url("../../imgs/patterned background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @media screen and (max-width: 960px) {
+        padding: 5rem 3rem;
+    }
+}

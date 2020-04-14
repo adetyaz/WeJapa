@@ -1,0 +1,76 @@
+.heading {
+    &__main {
+        font-family: 'gilroy extrabold', sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        color: $color-yellow;
+        text-transform: capitalize;
+        &--1 {
+            color: $color-primary;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 3rem;
+        }
+    }
+    &__primary {
+        @include typo;
+    }
+    &__features {
+        @include typo;
+        color: $color-white;
+    }
+    &__sub {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-primary;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    &__sub-s {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $color-dark;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    &__small {
+        font-size: .7rem;
+        font-weight: 800;
+        color: $color-dark-grey;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.paragraph {
+    &__home {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-light;
+    }
+    &__primary {
+        @include text;
+        color: $color-grey;
+        text-align: center;
+    }
+    &__text {
+        @include text;
+        color: $color-grey;
+        text-align: center;
+    }
+    &__text-s {
+        @include text;
+        color: $color-dark;
+        text-align: center;
+    }
+    &__text-f {
+        @include text;
+        color: $color-white;
+    }
+    &__text-p {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $color-primary;
+        text-align: center;
+    }
+}

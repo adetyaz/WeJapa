@@ -1,0 +1,12 @@
+@mixin typo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $color-black;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@mixin text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
