@@ -10,7 +10,7 @@
         padding: 2rem 1rem;
         border: $border;
         border-radius: $border-radius;
-        box-shadow: 0 .7rem 1.5rem rgba($color-black, .025);
+        box-shadow: 0 .7rem 1.5rem rgba($color-secondary, .1);
         &:not(:last-child) {
             margin-right: 3.5rem;
         }
