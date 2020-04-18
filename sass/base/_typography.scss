@@ -26,13 +26,6 @@
         text-transform: capitalize;
         text-align: center;
     }
-    &__sub-s {
-        font-size: 1.3rem;
-        font-weight: 500;
-        color: $color-dark;
-        text-transform: capitalize;
-        text-align: center;
-    }
     &__small {
         font-size: .7rem;
         font-weight: 800;
@@ -44,12 +37,11 @@
 
 .paragraph {
     &__home {
-        font-size: 1.6rem;
-        font-weight: 400;
+        @include primary-texts;
         color: $color-light;
     }
     &__primary {
-        @include text;
+        @include primary-texts;
         color: $color-grey;
         text-align: center;
     }
@@ -58,19 +50,30 @@
         color: $color-grey;
         text-align: center;
     }
-    &__text-s {
-        @include text;
-        color: $color-dark;
-        text-align: center;
-    }
     &__text-f {
-        @include text;
+        font-size: 1.5rem;
+        font-weight: 400;
         color: $color-white;
     }
-    &__text-p {
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: $color-primary;
-        text-align: center;
+    &__steps {
+        @include primary-texts;
+        text-transform: capitalize;
+        margin-left: 3.5rem;
+        @media screen and (max-width: 600px) {
+            text-align: center;
+            margin-left: 0;
+        }
+        &--1 {
+            color: $color-blue;
+        }
+        &--2 {
+            color: $color-primary;
+        }
+        &--3 {
+            color: $color-purple;
+        }
+        &--4 {
+            color: $color-orange;
+        }
     }
 }

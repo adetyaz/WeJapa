@@ -1,61 +1,41 @@
 .footer {
     position: relative;
-    padding: 8rem 5rem;
+    padding: 12rem 5rem;
+    background: url('../../imgs/patterned background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: '';
+        background-image: url('../../imgs/footer wave.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -.3rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
     @media screen and (max-width: 600px) {
         padding: 8rem 0;
     }
-    &__logo-box {
-        position: absolute;
-        left: 8rem;
-        top: 7.5rem;
-        @media screen and (max-width: 600px) {
-            left: 2rem;
-            top: .5rem;
-        }
-    }
-    &__logo {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
     &__elements {
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
+        position: relative;
+        top: 8rem;
         @media screen and (max-width: 600px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
-    }
-    &__items {
-        margin-left: 10rem;
-        margin-bottom: 3rem;
-        @media screen and (max-width: 950px) {
-            margin-left: 7.5rem;
-        }
-        @media screen and (max-width: 600px) {
-            margin-left: .5rem;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    &__list {
-        display: inline-block;
-        list-style: none;
-        margin-left: 2rem;
-        @media screen and (max-width: 600px) {
-            margin-top: 1rem;
-        }
-    }
-    &__link {
-        text-decoration: none;
-        font-size: 1.3rem;
-        font-weight: 400;
-        color: $color-grey;
-        text-transform: capitalize;
     }
     &__icons {
         display: flex;
         justify-content: center;
         @media screen and (max-width: 600px) {
-            margin-left: -5rem;
+            margin-left: -8rem;
+            margin-bottom: 3rem;
         }
     }
     &__icons-img {
@@ -68,13 +48,13 @@
     }
     &__copyright {
         font-size: 1.3rem;
-        color: $color-grey;
+        color: $color-light-grey;
         font-weight: 400;
         position: absolute;
         bottom: 0.4rem;
-        left: 16rem;
+        left: 6rem;
         @media screen and (max-width: 600px) {
-            left: .5rem;
+            left: 3.5rem;
         }
     }
 }

@@ -1,17 +1,46 @@
 .home-section {
-    background-image: url("../../imgs/header background.svg");
+    background-image: url("../../imgs/austin-distel-744oGeqpxPQ-unsplash.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: bottom;
     padding: 3rem 0;
     overflow: hidden;
-    z-index: 5;
     margin-bottom: 10rem;
+    position: relative;
+    &::before {
+        content: '';
+        background: linear-gradient(to bottom, #000000, #0f9b0f);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.95;
+    }
+    &::after {
+        content: '';
+        background: url('../../imgs/wave.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        // top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 22rem;
+        width: 100%;
+    }
 }
 
 .values-section {
-    margin: 5rem 0;
     padding: 5rem 5rem;
-    background-color: $color-white;
+    background-color: #ffffff;
+    margin-bottom: 5rem;
+    margin-top: -12.5rem;
 }
 
 .features-section {
@@ -23,5 +52,16 @@
     overflow: hidden;
     @media screen and (max-width: 960px) {
         padding: 5rem 3rem;
+    }
+}
+
+.steps-section {
+    padding: 20rem 5rem;
+    background-color: $color-white;
+    @media screen and (max-width: 960px) {
+        padding: 18rem 3rem;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 35rem 3rem;
     }
 }

@@ -1,37 +1,19 @@
-.u-margin-top-bg {
-    margin-top: 10rem;
-    @media screen and (max-width: 600px) {
-        margin-top: 3rem;
-    }
-}
-
 .u-margin-top-md {
     margin-top: 8rem;
 }
 
-.u-margin-top-sm {
-    margin-top: 2.5rem;
-}
-
-.u-margin-sm {
-    margin: 1rem 0;
-}
-
 .u-margin-bottom-bg {
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
-.special-margin {
-    margin-right: 36rem;
+.margin-top {
+    margin-top: -12rem;
+}
+
+.margin {
+    margin-top: 1.5rem;
+    margin-right: 3rem;
     @media screen and (max-width: 600px) {
         margin-right: 0;
     }
-}
-
-.u-margin-bottom-text {
-    margin-bottom: 2.5rem;
-}
-
-.u-margin-bottom-sm {
-    margin-bottom: 1rem;
 }
